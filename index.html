@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="backCard">
+    <div class="backNumber">000</div>
+  </div>
+
+  <div class="frontCard">
+    <div class="circle">
+      <div class="bigCircle"></div>
+      <div class="smallCircle"></div>
+    </div>
+
+    <div class="details">
+      <div class="frontNumber">0000 0000 0000 0000</div>
+      <div class="cardName">
+        <div class="name">Jane Appleseed</div>
+        <div class="date"><span class="mm">00</span> / <span class="yy">00</span> </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="form">
+    <div class="cardHolderName">
+      <label for="">Cardholder Name</label>
+      <input type="text" class="cardHolderNameInput" placeholder="e.g. Jane Appleseed">
+    </div>
+
+    <div class="cardNumber">
+      <label for="">Card Number</label>
+      <input type="text" class="cardHolderNumberInput" placeholder="e.g. 1234 5678 9123 0000">
+      <div class="numberError"></div>
+    </div>
+
+    <div class="dateCvc">
+      <div class="label">
+        <p>Exp. Date (MM/YY)</p>
+        <p>CVC</p>
+      </div>
+
+      <div class="inputs">
+        <input type="number" class="month" placeholder="MM">
+        <input type="number" class="year" placeholder="YY">
+        <input type="number" class="cvc" placeholder="e.g. 123">
+      </div>
+
+      <div class="error">
+        <div class="monthYearError">Can't be Blank</div>
+        <div class="cvcError">Can't be Blank</div>
+      </div>
+
+      <div class="button">Confirm</div>
+    </div>
+  </div>
+  
+
+  <!-- Completed state start -->
+
+  <div class="formCompleted">
+    <div class="center">
+      <img src="./images/icon-complete.svg" alt="">
+      <div class="thankyou">Thank you!</div>
+      <div class="added">We've added your card details</div>
+      <div class="continue">Continue</div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/charlsoluwapelumi">Sns Charmie</a>.
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+</html>
